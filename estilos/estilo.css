@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -13,12 +16,14 @@ header{
 }
 
 h1, h2, h3, h4{
-    font-family: Helvetica, sans-serif;
+    color: white;
+    font-family: "Cal Sans", sans-serif;
 }
 
 
 a, p{
-    font-family: Helvetica, sans-serif;
+    color: white;
+    font-family: "Cal Sans", sans-serif;
 }
 
 .header-box{
@@ -36,12 +41,10 @@ a, p{
 }
 
 .nav-bar{
-    display: inline-flex;
-    flex-direction: column;
-    width: 300px;
-    height: 600px;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .nav-bar > a{
@@ -56,21 +59,53 @@ a, p{
     text-decoration: none;
     text-align: center;
     color: cadetblue;
-    margin: 10%;
+    margin: 2% 5% 0% 0%;
 }
 
 .nav-bar > a:hover{
     width: 300px;
-    height: 200px;
+    height: 150px;
 
 }
 
 .mostrar-descricao{
+    color: cadetblue;
     display: none;
 }
 
 .nav-bar > a:hover .mostrar-descricao{
     display: block;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;  
+}
+
+.item-box{
+    background-color: rgb(19, 49, 67);
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    text-align: center;
+    align-items: center;
+}
+
+.button-link{
+    display: block;
+    cursor: pointer;
+    max-width: fit-content;
+    height: 50px;
+    line-height: 50px;
+    background-color: aliceblue;
+    border: 1px solid aqua;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0,0,0,.15);
+    text-decoration: none;
+    text-align: center;
+    color: cadetblue;
+    margin: 2% 5% 0% 0%;
 }
 
 
