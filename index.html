@@ -11,39 +11,65 @@
     <header>
         <div class="header-box">
             <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo da NetoAI"></a>
-        </div>  
-    </header>
-    <div class="conteudo">
+        </div>
         <nav class="nav-bar">
             <a href="gerar.html">Gerar <p class="mostrar-descricao">Gere uma nova imagem dando apenas uma descrição em texto</p></a>
             <a href="galeria.html">Galeria <p class="mostrar-descricao">Veja suas imagens geradas com nossa IA</p></a>
             <a href="contato.html">Contato <p class="mostrar-descricao">Fale conosco por meio de um formulário</p></a>
             <a href="sobre.html">Sobre <p class="mostrar-descricao">Tenha todas as informações sobre a netoCorp e seu criador</p></a>
-        </nav>
-        <div class="box-container">
-            <div class="item-box">
-                <h1>Gere imagens agora!</h1>
-                <p>é grátis e fácil! entenda como:</p>
-                <img src="assets/scarlett-johansson-dancing.gif" alt="Scarlett Johansson dançando">
-                <a href="gerar.html" class="button-link" style="text-align: center;">Quero aprender!!!</a>
+        </nav> 
+    </header>
+    <div class="conteudo">
+        <div class="carrossel-container">
+            <div class="carrossel" id="carrossel">
+              <div class="item">
+                    <div class="item-box">
+                        <h1>Gere imagens agora!</h1>
+                        <p>é grátis e fácil! entenda como:</p>
+                        <img src="assets/scarlett-johansson-dancing.gif" alt="Scarlett Johansson dançando">
+                        <a href="gerar.html" class="button-link" style="text-align: center;">Quero aprender!!!</a>
+                </div>
+              </div>
+              <div class="item">
+                    <div class="item-box">
+                        <h1>Veja as imagens geradas!</h1>
+                        <p>Na galeria netoAI</p>
+                        <img src="assets/cat-staring-at-camera-fr.gif" alt="gatinho olhando para câmera">
+                        <a href="galeria.html" class="button-link" style="text-align: center;">Acessar</a>
+                </div>
+              </div>
+              <div class="item">
+                    <div class="item-box">
+                        <h1>Fale conosco</h1>
+                        <p>entenda como:</p>
+                        <img src="assets/hoseokmaraj-stan-twitter.gif" alt="briga">
+                        <a href="gerar.html" class="button-link" style="text-align: center;">Acessar</a>
+                </div>
+              </div>
+              <div class="item">
+                    <div class="item-box">
+                        <h1>Informações sobre a netoCorp</h1>
+                        <p>saiba aqui:</p>
+                        <img src="assets/nerd-emoji.gif" alt="emoji nerd arrumando óculos">
+                        <a href="gerar.html" class="button-link" style="text-align: center;">Acessar</a>
+                </div>
+              </div>
+            </div>
+            <div class="botoes">
+                <button onclick="voltar()">&lt</button>
+                <button onclick="avancar()">&gt</button>
             </div>
         </div>
-        <div class="box-container">
-            <div class="item-box">
-                <h1>Gere imagens agora!</h1>
-                <p>é grátis e fácil! entenda como:</p>
-                <img src="assets/scarlett-johansson-dancing.gif" alt="Scarlett Johansson dançando">
-                <a href="gerar.html" class="button-link" style="text-align: center;">Quero aprender!!!</a>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
 
+
+    </div>
+
+    <div class="footer">
         <div class="footer_contents">
             <h3>netoAI</h3>
             <p> - direitos reservados netoCorp 2025-2025</p>
         </div>
-    
     </div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
