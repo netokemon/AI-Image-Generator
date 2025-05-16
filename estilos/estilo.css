@@ -187,10 +187,57 @@ label{
 .logo{
     max-width: 150px;
 }
-table td{
+
+.resultado-imagem{
+    display: none;
+    padding: 1% 0% 0% 0%;
     text-align: center;
-    max-width: 200px;
+    width: fit-content;
+    margin: auto;
 }
+
+.botao-gerar{
+    font-family: "Cal Sans", sans-serif;
+    display: block;
+    cursor: pointer;
+    min-width: 100px;
+    height: 50px;
+    line-height: 50px;
+    background-color: cadetblue;
+    border: 1px solid aqua;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0,0,0,.15);
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue;
+    margin: 2% 0% 0% 0%;
+}
+
+.botao-gerar:hover{
+    color: cadetblue;
+    background-color: aliceblue;
+}
+
+.input-gerar{
+    line-height: 50px;
+    width: 50%;
+    text-align: center;
+    border-radius: 30px;
+    font-family: "Cal Sans", sans-serif;
+    background-color: dimgray;
+    color: aliceblue;
+    border: none;
+}
+
+.gerar-box{
+    padding: 5% 0% 5% 0%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 
 
 

@@ -11,19 +11,21 @@
     <header>
         <div class="header-box">
             <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo da NetoAI"></a>
-            <h3>Gerar Imagem</h3>
         </div>
     </header>
     <div class="conteudo">
+        <div class="resultado-imagem" id="resultado-imagem">
+            <h2>Imagem gerada:</h2>
+            <img src="https://picsum.photos/200" alt="imagem gerada por IA" id="imagem-gerada">
+        </div>
         <form action="#">
-            <label for="texto">Descreva a imagem:</label>
-            <input type="text" name="texto" id="texto">
-            <button type="submit">GERAR</button>
+            <div class="gerar-box">
+                <input type="text" name="texto" id="prompt-input" placeholder="Descreva a imagem aqui" class="input-gerar">
+                <button onclick = "ativarImagem()" type="button" class="botao-gerar" id="botao-gerar">Gerar!</button>
+            </div>
+            
         </form>
-        <br>
-        <h2>Imagem gerada:</h2>
-        <br>
-        <img src="https://picsum.photos/200" alt="imagem gerada por IA">
     </div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
