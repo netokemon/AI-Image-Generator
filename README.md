@@ -17,5 +17,4 @@
 - CSS3
 - JavaScript
 - API de geração de imagens (via fetch)
-- Variáveis de ambiente (`.env`) com `API_KEY` e `API_URL`
 
