@@ -36,10 +36,7 @@ a, p{
     width: 100%;
     height: 100vw;
 }
-.conteudo ul li{
-    display: inline;
-    margin: 5px;
-}
+
 
 .nav-bar{
     display: flex;
@@ -60,6 +57,7 @@ a, p{
     text-align: center;
     color: cadetblue;
     margin: 2% 5% 0% 0%;
+    transition: all 0.3s ease;
 }
 
 .nav-bar > a:hover{
@@ -104,7 +102,12 @@ a, p{
     border-radius: 10px;
 }
 
+.item-box > a{
+    transition: all 0.3s ease;
+}
+
 .item-box > a:hover{
+    
     background-color: cadetblue;
     color: white;
     border: 1px solid rgb(70, 115, 117);
@@ -141,6 +144,7 @@ a, p{
     text-align: center;
     color: cadetblue;
     margin: 2% 5% 0% 0%;
+    transition: all 0.3s ease;
 }
 
 
@@ -170,17 +174,40 @@ a, p{
     margin:auto;
 
 }
-.popup{
-    border-radius: 5px;
+
+.galeria {
     text-align: center;
-    background-color: cornflowerblue;
-    max-width: 20%;
-    height: 10%;
+    padding: 40px 0;
 }
 
-.galeria{
-    justify-self: center;
+
+.galeria h2 {
+    color: aliceblue;
+    margin-bottom: 20px;
 }
+
+.galeria-imagens {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.galeria-imagens img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.galeria-imagens img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
 label{
     display: block;
 }
@@ -211,6 +238,7 @@ label{
     text-align: center;
     color: aliceblue;
     margin: 2% 0% 0% 0%;
+    transition: all 0.3s ease;
 }
 
 .botao-gerar:hover{
@@ -238,7 +266,150 @@ label{
     align-items: flex-end;
 }
 
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
 
+.popup-container.mostrar {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup {
+    position: relative;
+    background: linear-gradient(135deg, #5f9ea0, #4682b4);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.popup-container.mostrar .popup {
+    transform: translateY(0);
+}
+
+.logo-popup {
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+.popup-content h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.popup-content p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.popup-btn {
+    display: inline-block;
+    background-color: aliceblue;
+    color: cadetblue;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.popup-btn:hover {
+    background-color: transparent;
+    color: white;
+    border-color: aliceblue;
+    transform: translateY(-3px);
+}
+
+.fechar-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.fechar-popup:hover {
+    transform: rotate(90deg);
+}
+
+@keyframes popupEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#imagem-gerada{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+form{
+    text-align: center;
+}
+
+form > label{
+    color: white;
+    font-family: "Cal Sans", sans-serif;
+    padding: 1%;
+}
+
+.input-contato{
+    border-radius: 30px;
+    line-height: 50px;
+    width: 40%;
+    text-align: center;
+    border-radius: 30px;
+    font-family: "Cal Sans", sans-serif;
+    background-color: dimgray;
+    color: aliceblue;
+    border: none;
+}
+
+.sobre-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(19, 49, 67);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+}
+
+.sobre-container > img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 
 

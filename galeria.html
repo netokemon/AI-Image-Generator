@@ -11,37 +11,42 @@
     <header>
         <div class="header-box">
             <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo da NetoAI"></a>
-            <h3>Galeria</h3>
         </div>
+        <nav class="nav-bar">
+            <a href="gerar.html">Gerar <p class="mostrar-descricao">Gere uma nova imagem dando apenas uma descrição em texto</p></a>
+            <a href="galeria.html">Galeria <p class="mostrar-descricao">Veja suas imagens geradas com nossa IA</p></a>
+            <a href="contato.html">Contato <p class="mostrar-descricao">Fale conosco por meio de um formulário</p></a>
+            <a href="sobre.html">Sobre <p class="mostrar-descricao">Tenha todas as informações sobre a netoCorp e seu criador</p></a>
+        </nav>
     </header>
     <div class="conteudo">
         <div class="galeria">
-            <ul>
-                <li>
-                    <img src="https://picsum.photos/200" alt="imagem gerada">
-
-                </li>
-                <li>
-                    <img src="https://picsum.photos/200" alt="imagem gerada">
-                </li>
-                <li>
-                    <img src="https://picsum.photos/200" alt="imagem gerada">
-                </li>
-                <li>
-                    <img src="https://picsum.photos/200" alt="imagem gerada">
-                </li>
-            </ul>
+            <h2>Galeria de Imagens</h2>
+            <div class="galeria-imagens">
+                <img src="https://picsum.photos/200?" alt="imagem gerada">
+                <img src="https://picsum.photos/200?" alt="imagem gerada">
+                <img src="https://picsum.photos/200?" alt="imagem gerada">
+                <img src="https://picsum.photos/200?" alt="imagem gerada">
+            </div>
         </div>
-        <br>
-        <div class="popup">
-            <img class="logo" src="assets/logo.png" alt="logo netoAI">
-            <h3 style="display: inline;">Gere uma nova imagem!</h3>
-            <p>é grátis! clique <button><a href="gerar.html">AQUI</a></button></p>
+        <div class="popup-container">
+            <div class="popup">
+                <img class="logo-popup" src="assets/logo.png" alt="logo netoAI">
+                <div class="popup-content">
+                    <h3>Gere uma nova imagem!</h3>
+                    <p>É rápido, fácil e grátis!</p>
+                    <a href="gerar.html" class="popup-btn">Começar agora</a>
+                </div>
+                <button class="fechar-popup" onclick="fecharPopup()">×</button>
+            </div>
+</div>
+    </div>
+    <div class="footer">
+        <div class="footer_contents">
+            <h3>netoAI</h3>
+            <p> - direitos reservados netoCorp 2025-2025</p>
         </div>
     </div>
-    <footer>
-        <h3 style="display: inline;">netoAI</h3>
-        <p style="display: inline;"> - direitos reservados netoCorp 2025-2025</p>
-    </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

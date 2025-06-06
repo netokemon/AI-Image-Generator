@@ -11,23 +11,30 @@
     <header>
         <div class="header-box">
             <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo da NetoAI"></a>
-            <h3>Contate-nos:</h3>
         </div>
+        <nav class="nav-bar">
+            <a href="gerar.html">Gerar <p class="mostrar-descricao">Gere uma nova imagem dando apenas uma descrição em texto</p></a>
+            <a href="galeria.html">Galeria <p class="mostrar-descricao">Veja suas imagens geradas com nossa IA</p></a>
+            <a href="contato.html">Contato <p class="mostrar-descricao">Fale conosco por meio de um formulário</p></a>
+            <a href="sobre.html">Sobre <p class="mostrar-descricao">Tenha todas as informações sobre a netoCorp e seu criador</p></a>
+        </nav>
     </header>
     <div class="conteudo">
         <form action="#">
             <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" placeholder="Nome da Silva">
+            <input type="text" name="nome" id="nome" placeholder="Nome da Silva" class="input-contato">
             <label for="email">e-mail:</label>
-            <input type="email" name="email" id="email" placeholder="bananinha@email.com">
+            <input type="email" name="email" id="email" placeholder="bananinha@email.com" class="input-contato">
             <label for="mensagem">Feedback:</label>
-            <textarea name="mensagem" id="mensagem" rows="5" cols="20" placeholder="seu comentário aqui"></textarea>
-            <button type="submit">ENVIAR</button>
+            <textarea name="mensagem" id="mensagem" rows="5" cols="20" placeholder="seu comentário aqui" class="input-contato"></textarea>
+            <button type="submit" class="botao-gerar" style="margin: auto;">ENVIAR</button>
         </form>
     </div>
-    <footer>
-        <h3 style="display: inline;">netoAI</h3>
-        <p style="display: inline;">- direitos reservados netoCorp 2025-2025</p>
-    </footer>
+    <div class="footer">
+        <div class="footer_contents">
+            <h3>netoAI</h3>
+            <p> - direitos reservados netoCorp 2025-2025</p>
+        </div>
+    </div>
 </body>
 </html>

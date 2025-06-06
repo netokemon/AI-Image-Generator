@@ -12,6 +12,12 @@
         <div class="header-box">
             <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo da NetoAI"></a>
         </div>
+        <nav class="nav-bar">
+            <a href="gerar.html">Gerar <p class="mostrar-descricao">Gere uma nova imagem dando apenas uma descrição em texto</p></a>
+            <a href="galeria.html">Galeria <p class="mostrar-descricao">Veja suas imagens geradas com nossa IA</p></a>
+            <a href="contato.html">Contato <p class="mostrar-descricao">Fale conosco por meio de um formulário</p></a>
+            <a href="sobre.html">Sobre <p class="mostrar-descricao">Tenha todas as informações sobre a netoCorp e seu criador</p></a>
+        </nav>
     </header>
     <div class="conteudo">
         <div class="resultado-imagem" id="resultado-imagem">
@@ -20,11 +26,17 @@
         </div>
         <form action="#">
             <div class="gerar-box">
-                <input type="text" name="texto" id="prompt-input" placeholder="Descreva a imagem aqui" class="input-gerar">
+                <input type="text" name="texto" id="input-gerar" placeholder="Descreva a imagem aqui" class="input-gerar">
                 <button onclick = "ativarImagem()" type="button" class="botao-gerar" id="botao-gerar">Gerar!</button>
             </div>
             
         </form>
+    </div>
+    <div class="footer">
+        <div class="footer_contents">
+            <h3>netoAI</h3>
+            <p> - direitos reservados netoCorp 2025-2025</p>
+        </div>
     </div>
     <script src="scripts/script.js"></script>
 </body>
