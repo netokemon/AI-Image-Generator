@@ -1,24 +1,7 @@
-let index = 0;
-const carrossel = document.getElementById("carrossel");
-const itemLargura = 320;
 const divImagemGerada = document.getElementById("resultado-imagem");
 const imagemResultado = document.getElementById("imagem-gerada");
-const API_KEY = "Insira a sua aqui! :D";
-const API_URL = "Inserir aqui! :D";
-
-function avancar(){
-    if(index < carrossel.children.length - 1){
-        index++;
-        carrossel.style.transform = `translateX(-${itemLargura * index}px)`;
-    }
-}
-
-function voltar() {
-    if (index > 0) {
-      index--;
-      carrossel.style.transform = `translateX(-${itemLargura * index}px)`;
-    }
-  }
+const API_KEY = "Inserir aqui!";
+const API_URL = "https://api.vyro.ai/v2/image/generations";
 
 
 function ativarImagem(){
