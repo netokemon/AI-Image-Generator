@@ -1,27 +1,12 @@
 const divImagemGerada = document.getElementById("resultado-imagem");
 const imagemResultado = document.getElementById("imagem-gerada");
-const API_KEY = "Inserir aqui!";
+const API_KEY = "Inserir aqui";
 const API_URL = "https://api.vyro.ai/v2/image/generations";
 
 
 function ativarImagem(){
   divImagemGerada.style.display = 'block';
 }
-
-setTimeout(function() {
-    document.querySelector('.popup-container').classList.add('mostrar');
-}, 1000);
-
-function fecharPopup() {
-    document.querySelector('.popup-container').classList.remove('mostrar');
-}
-
-document.querySelector('.popup-container').addEventListener('click', function(e) {
-    if (e.target === this) {
-        fecharPopup();
-    }
-});
-
 
 function ativarImagem(){
   document.getElementById("botao-gerar").disabled = true;
