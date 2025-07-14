@@ -1,5 +1,10 @@
 
 @media (max-width: 768px) {
+
+    :root {
+    --item-largura: 320px;
+    }
+
     .hamburger {
         display: block;
     }

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
 
+:root {
+  --item-largura: 690px;
+}
+
 
 *{
     margin: 0;
@@ -106,7 +110,7 @@ h1, h2, h3, h4, a, p {
 
 .carrossel-container{
     position: relative;
-    width: 320px;
+    width: var(--item-largura);
     overflow: hidden;
     margin: auto;
 }
