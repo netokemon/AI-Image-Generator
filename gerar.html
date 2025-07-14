@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerar Imagem - netoAI</title>
     <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/responsivo.css">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -12,14 +13,24 @@
         <div class="header-box">
             <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo da NetoAI"></a>
         </div>
+        
+        <button class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
         <nav class="nav-bar">
-            <a href="gerar.html">Gerar <p class="mostrar-descricao">Gere uma nova imagem dando apenas uma descrição em texto</p></a>
-            <a href="galeria.html">Galeria <p class="mostrar-descricao">Veja suas imagens geradas com nossa IA</p></a>
-            <a href="contato.html">Contato <p class="mostrar-descricao">Fale conosco por meio de um formulário</p></a>
-            <a href="sobre.html">Sobre <p class="mostrar-descricao">Tenha todas as informações sobre a netoCorp e seu criador</p></a>
-        </nav>
+            <a href="gerar.html">Gerar</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+        </nav> 
     </header>
     <div class="conteudo">
+        <div class="text-container">
+            <h2>Gerar Agora</h2>
+        </div>
         <div class="resultado-imagem" id="resultado-imagem">
             <h2>Imagem gerada:</h2>
             <img src="https://picsum.photos/200" alt="imagem gerada por IA" id="imagem-gerada">
@@ -39,5 +50,6 @@
         </div>
     </div>
     <script src="scripts/apiConnection.js"></script>
+    <script src="scripts/headerResponsiva.js"></script>
 </body>
 </html>

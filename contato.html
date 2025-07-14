@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - netoAI</title>
     <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/responsivo.css">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -12,15 +13,22 @@
         <div class="header-box">
             <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo da NetoAI"></a>
         </div>
+        
+        <button class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
         <nav class="nav-bar">
-            <a href="gerar.html">Gerar <p class="mostrar-descricao">Gere uma nova imagem dando apenas uma descrição em texto</p></a>
-            <a href="galeria.html">Galeria <p class="mostrar-descricao">Veja suas imagens geradas com nossa IA</p></a>
-            <a href="contato.html">Contato <p class="mostrar-descricao">Fale conosco por meio de um formulário</p></a>
-            <a href="sobre.html">Sobre <p class="mostrar-descricao">Tenha todas as informações sobre a netoCorp e seu criador</p></a>
-        </nav>
+            <a href="gerar.html">Gerar</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+        </nav> 
     </header>
     <div class="conteudo">
-        <form action="#">
+        <form class="form-contato" action="#">
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome" placeholder="Nome da Silva" class="input-contato">
             <label for="email">e-mail:</label>
@@ -36,5 +44,6 @@
             <p> - direitos reservados netoCorp 2025-2025</p>
         </div>
     </div>
+    <script src="scripts/headerResponsiva.js"></script>
 </body>
 </html>
